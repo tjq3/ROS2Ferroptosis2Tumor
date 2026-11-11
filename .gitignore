@@ -1,0 +1,24 @@
+# Generated MATLAB results and editor files
+*.asv
+*.mat
+*.fig
+*.png
+*.pdf
+*.tif
+*.tiff
+*.svg
+*.jpg
+*.jpeg
+*.csv
+*.log
+*.xlsx
+*.xls
+*.xlsm
+.DS_Store
+Thumbs.db
+
+# Frozen CTMC inputs
+!code/CTMC/Macro_r_Calibration_OUT/Macro_r_LOCKED.mat
+!code/CTMC/Macro_mu_Calibration_OUT/Macro_mu_LOCKED.mat
+!code/CTMC/Macro_Hazard_SSA_Domain_Confirm_OUT/Macro_SSA_LOCKED.mat
+!code/CTMC/Macro_Hazard_PreQ1_DT_Refinement_OUT/Macro_Hazard_PreQ1_DT_Refinement_FINAL.mat
