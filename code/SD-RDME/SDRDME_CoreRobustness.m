@@ -1,4 +1,4 @@
-%% FigS_SDRDME_fourRobustness_FINAL_v2.m
+%% SDRDME_CoreRobustness.m
 % -------------------------------------------------------------------------
 % FINAL targeted robustness analysis for the mitochondrial SD-RDME.
 %
@@ -52,7 +52,7 @@
 %   grid are recorded in one multi-region exact SSA ensemble per model.
 %
 % OUTPUTS
-%   FigS_SDRDME_fourRobustness_FINAL_v2.{pdf,png,tif,fig}
+%   SDRDME_CoreRobustness.{pdf,png,tif,fig}
 %   FigS_SDRDME_fourRobustness_mechanismAudit_v2.{pdf,png,tif,fig}
 %   FigS_SDRDME_fourRobustness_audit_v2.csv
 %   FigS_SDRDME_fourRobustness_gridAudit_v2.csv

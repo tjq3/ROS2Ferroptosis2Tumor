@@ -1,6 +1,6 @@
-function SI_M1_MesoMacro_Interface_Robustness_FINAL()
+function CTMC_RiskInterfaceRobustness()
 % =========================================================================
-% SI_M1_MesoMacro_Interface_Robustness_FINAL
+% CTMC_RiskInterfaceRobustness
 %
 % FINAL SI figure for robustness of mesoscopic -> macroscopic
 % ferroptotic-risk coarse-graining.

@@ -1,4 +1,4 @@
-%% Fig3G_c1hat_heldoutSpatialValidation.m
+%% SDRDME_HeldOutValidation.m
 % -------------------------------------------------------------------------
 % Held-out spatial validation of c1-hat after three-candidate screening.
 %

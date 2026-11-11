@@ -1,5 +1,5 @@
-function Fig4D_CellStateDependentFateRewiring_FINAL2(DATA_FILE)
-% Fig4D_CellStateDependentFateRewiring_FINAL
+function LPO_RepairTimeAndFateRoutes(DATA_FILE)
+% LPO_RepairTimeAndFateRoutes
 % FINAL main-text implementation for Fig.4D.
 % Identical microscopic histories; only cellular repair/memory state varies.
 

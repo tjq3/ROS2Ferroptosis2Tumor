@@ -1,6 +1,6 @@
-function Macro_Q2_TargetedConditionMap_FINAL()
+function CTMC_SpatialArrangementConditionScan()
 % =========================================================================
-% Macro_Q2_TargetedConditionMap_FINAL
+% CTMC_SpatialArrangementConditionScan
 %
 % Q2 targeted condition map after the spatial-arrangement phenomenon and
 % neighbourhood-access mechanism have both been established at the anchor
@@ -62,7 +62,7 @@ function Macro_Q2_TargetedConditionMap_FINAL()
 %
 % REQUIRED FILES
 % --------------
-% macro_sim_core_hazard_SSA_FINAL.m
+% CTMC_EventDrivenSimulation.m
 %
 % Macro_Q2_SpatialArrangement_PILOT_OUT/
 %   Macro_Q2_SpatialArrangement_PILOT.mat
@@ -100,9 +100,9 @@ ROBUST_EFFECT_MIN_PCT = 2.0;
 scriptDir = fileparts(mfilename('fullpath'));
 if isempty(scriptDir), scriptDir = pwd; end
 
-coreFile = fullfile(scriptDir,'macro_sim_core_hazard_SSA_FINAL.m');
+coreFile = fullfile(scriptDir,'CTMC_EventDrivenSimulation.m');
 assert(isfile(coreFile), ...
-    'Missing macro_sim_core_hazard_SSA_FINAL.m in the script directory.');
+    'Missing CTMC_EventDrivenSimulation.m in the script directory.');
 
 finalCandidates = { ...
     fullfile(scriptDir,'Macro_Q2_SpatialArrangement_FINAL_OUT', ...
@@ -118,7 +118,7 @@ for k=1:numel(finalCandidates)
 end
 assert(~isempty(finalFile), ...
     ['Cannot find Macro_Q2_SpatialArrangement_FINAL.mat. Run ', ...
-     'Macro_Q2_SpatialArrangement_FINAL.m first.']);
+     'CTMC_SpatialArrangementSimulation.m first.']);
 
 S = load(finalFile,'Q2');
 assert(isfield(S,'Q2'),'The FINAL spatial MAT file must contain Q2.');
@@ -819,7 +819,7 @@ if abs(deltaF)<1e-14
     cfg.lambdaF_site_h = [];
     cfg.store_event_log = false;
 
-    O = macro_sim_core_hazard_SSA_FINAL(cfg);
+    O = CTMC_EventDrivenSimulation(cfg);
 
     Z.AUTC_R = double(O.AUTC_NV);
     Z.AUTC_C = double(O.AUTC_NV);
@@ -853,11 +853,11 @@ cfg.lambdaF_site_h = [];
 cfg.store_event_log = true;
 
 cfg.lambdaF_initial_map_h = mapR*r;
-OR = macro_sim_core_hazard_SSA_FINAL(cfg);
+OR = CTMC_EventDrivenSimulation(cfg);
 DR = replayExactMechanism(OR,mapR,P.initialMask,chiLow,chiHigh);
 
 cfg.lambdaF_initial_map_h = mapC*r;
-OC = macro_sim_core_hazard_SSA_FINAL(cfg);
+OC = CTMC_EventDrivenSimulation(cfg);
 DC = replayExactMechanism(OC,mapC,P.initialMask,chiLow,chiHigh);
 
 Z.AUTC_R = double(OR.AUTC_NV);

@@ -1,6 +1,6 @@
-function OUT = macro_sim_core_hazard_SSA_FINAL(cfg)
+function OUT = CTMC_EventDrivenSimulation(cfg)
 % =========================================================================
-% macro_sim_core_hazard_SSA_FINAL
+% CTMC_EventDrivenSimulation
 %
 % Exact event-driven direct-method SSA for the updated macro model:
 %

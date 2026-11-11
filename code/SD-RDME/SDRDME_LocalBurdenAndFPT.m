@@ -1,4 +1,4 @@
-%% Fig3BC_predictorIndependent_localBurden_FPT.m
+%% SDRDME_LocalBurdenAndFPT.m
 % -------------------------------------------------------------------------
 % Predictor-independent Fig. 3B--C for mitochondrial SD-RDME.
 %

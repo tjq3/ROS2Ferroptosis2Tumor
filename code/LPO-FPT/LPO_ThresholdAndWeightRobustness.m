@@ -1,4 +1,4 @@
-%% MLWTWS_SI_FIXED.m
+%% LPO_ThresholdAndWeightRobustness.m
 % =========================================================================
 % Mesoscopic SI robustness:
 % Fate-boundary M_L x relative source weighting eta = omega_S / omega_T

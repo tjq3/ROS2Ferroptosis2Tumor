@@ -1,4 +1,4 @@
-%% Fig4B_MesoscopicFateRoutes_FINAL.m
+%% LPO_FateRoutes.m
 % =========================================================================
 % Fig. 4B | Distinct routes to ferroptotic commitment
 %
@@ -272,7 +272,7 @@ routeColors = [ ...
 sdFile = resolveInputFile(scriptDir,SD_DATA_NAME);
 if isempty(sdFile)
     error(['Required SD-RDME data file not found: %s\n' ...
-           'Run the finalized SDRDME_burdenandFPT script first so that\n' ...
+           'Run SDRDME_LocalBurdenAndFPT first so that\n' ...
            'Fig3BC_predictorIndependent_data.mat is available.'],SD_DATA_NAME);
 end
 

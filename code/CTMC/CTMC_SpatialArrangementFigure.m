@@ -1,6 +1,6 @@
-function Fig5C_Q2_REVISED_3D_MECHANISM_FINAL_v2()
+function CTMC_SpatialArrangementFigure()
 % =========================================================================
-% Fig5C_Q2_REVISED_3D_MECHANISM_FINAL_v2
+% CTMC_SpatialArrangementFigure
 %
 % FIXED VERSION: uses the exact field names saved by the completed Q2 FINAL
 % simulations. No fuzzy field-name searching and no new simulation.
@@ -51,7 +51,7 @@ E  = Q2.ensemble;
 P  = Q2.patternExample;
 ME = AUDIT.ensemble;
 
-% Exact fields written by Macro_Q2_SpatialArrangement_FINAL.m
+% Exact fields written by CTMC_SpatialArrangementSimulation.m
 assert(isfield(E,'t_h'),'Q2.ensemble.t_h is missing.');
 assert(isfield(E,'NVcurve'),'Q2.ensemble.NVcurve is missing.');
 assert(isfield(E,'AUTC_NV'),'Q2.ensemble.AUTC_NV is missing.');
@@ -63,7 +63,7 @@ assert(isfield(P,'mapClustered'),'Q2.patternExample.mapClustered is missing.');
 assert(isfield(P,'initialMask'),'Q2.patternExample.initialMask is missing.');
 assert(isfield(P,'metrics'),'Q2.patternExample.metrics is missing.');
 
-% Exact fields written by Macro_Q2_NeighbourhoodAccess_Mechanism_FINAL.m
+% Exact fields written by CTMC_NeighbourhoodAccessMechanism.m
 assert(isfield(ME,'t_h'),'AUDIT.ensemble.t_h is missing.');
 assert(isfield(ME,'highClearAccessibleFrac'),'AUDIT.ensemble.highClearAccessibleFrac is missing.');
 assert(isfield(ME,'cumLowBirth'),'AUDIT.ensemble.cumLowBirth is missing.');

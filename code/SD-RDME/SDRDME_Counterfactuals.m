@@ -1,4 +1,4 @@
-%% Fig3E_UHBF_counterfactual_main_SI_COMPLETE_v2.m
+%% SDRDME_Counterfactuals.m
 % -------------------------------------------------------------------------
 % Standalone U/H/B/F counterfactual decomposition for mitochondrial SD-RDME.
 %

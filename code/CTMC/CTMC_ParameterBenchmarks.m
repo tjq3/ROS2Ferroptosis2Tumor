@@ -1,6 +1,6 @@
-function SI_M2_Macro_Parameter_Benchmarks_FINAL()
+function CTMC_ParameterBenchmarks()
 % =========================================================================
-% SI_M2_Macro_Parameter_Benchmarks_FINAL
+% CTMC_ParameterBenchmarks
 %
 % FINAL SI figure for literature-informed macro parameter benchmarks.
 %
@@ -42,12 +42,12 @@ AUTO_START_POOL = true;
 scriptDir = fileparts(mfilename('fullpath'));
 if isempty(scriptDir), scriptDir = pwd; end
 
-coreFile = fullfile(scriptDir,'macro_sim_core_hazard_SSA_FINAL.m');
+coreFile = fullfile(scriptDir,'CTMC_EventDrivenSimulation.m');
 rFile = fullfile(scriptDir,'Macro_r_Calibration_OUT','Macro_r_LOCKED.mat');
 muFile = fullfile(scriptDir,'Macro_mu_Calibration_OUT','Macro_mu_LOCKED.mat');
 ssaLockFile = fullfile(scriptDir,'Macro_Hazard_SSA_Domain_Confirm_OUT','Macro_SSA_LOCKED.mat');
 
-assert(isfile(coreFile),'Missing macro_sim_core_hazard_SSA_FINAL.m.');
+assert(isfile(coreFile),'Missing CTMC_EventDrivenSimulation.m.');
 assert(isfile(rFile),'Missing Macro_r_LOCKED.mat.');
 assert(isfile(muFile),'Missing Macro_mu_LOCKED.mat.');
 
@@ -240,13 +240,13 @@ tmp=cell(nRep,1);
 if poolReady
     parfor k=1:nRep
         c=cfg; c.seed=seedBase+k;
-        O=macro_sim_core_hazard_SSA_FINAL(c);
+        O=CTMC_EventDrivenSimulation(c);
         tmp{k}=reduceSSA(O,storeCurves);
     end
 else
     for k=1:nRep
         c=cfg; c.seed=seedBase+k;
-        O=macro_sim_core_hazard_SSA_FINAL(c);
+        O=CTMC_EventDrivenSimulation(c);
         tmp{k}=reduceSSA(O,storeCurves);
     end
 end

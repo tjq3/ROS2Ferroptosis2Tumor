@@ -1,4 +1,4 @@
-function SI_M5_Q1_StatisticalValidation_FINAL()
+function CTMC_CommitmentClearanceValidation()
 % Supplementary statistical / numerical support for Fig.5B Q1 inference.
 % Plotting only; no new SSA.
 

@@ -1,4 +1,4 @@
-function SI_Q2_3_ConditionGenerality_FINAL()
+function CTMC_SpatialArrangementGenerality()
 % Curated Q2 SI-3 condition/generalization figure. NO NEW SIMULATION.
 % a Delta AUTC; b Delta Pext; c Delta vacancy access; d cross-condition alignment.
 % Discrete cells only: no interpolated contour surface.

@@ -1,8 +1,8 @@
-%% Fig3H_redoxBuffer_HIGHLIGHT_FINAL.m
+%% SDRDME_RedoxBufferFigure.m
 % Publication-style post-processing for the FINAL local redox-buffer scan.
 %
 % This script DOES NOT rerun the SD-RDME simulation. It reads the FINAL
-% summary tables produced by Fig3H_redoxBufferCondition_FINAL.m and creates
+% summary tables produced by SDRDME_RedoxBufferScan.m and creates
 % a mechanism-led four-panel figure:
 %   A, local Fe2+ source substitution;
 %   B, rebuilding of the local Fe2+ reserve;

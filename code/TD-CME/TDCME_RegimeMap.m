@@ -1,5 +1,5 @@
 % =========================================================================
-% TDCME_Stage4_TimescaleDispersion_RegimeMap_PUBLICATION_READY.m
+% TDCME_RegimeMap.m
 %
 % Publication-oriented TD-CME condition analysis
 % ------------------------------------------------

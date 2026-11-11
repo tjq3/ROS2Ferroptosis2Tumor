@@ -1,4 +1,4 @@
-function SI_Q2_2_NeighbourhoodAccess_Mechanism_FINAL()
+function CTMC_NeighbourhoodAccessFigure()
 % Curated Q2 SI-2 mechanism figure. NO NEW SIMULATION.
 % a low-lineage access; b low-lineage births; c high-clearance accessibility;
 % d access-burden association.

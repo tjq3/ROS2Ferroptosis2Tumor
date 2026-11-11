@@ -1,4 +1,4 @@
-%% FigS_geometryGeneralization_FINAL_v2.m
+%% SDRDME_GeometryRobustness.m
 % -------------------------------------------------------------------------
 % FINAL SI geometry-generalization analysis for the mitochondrial SD-RDME.
 %

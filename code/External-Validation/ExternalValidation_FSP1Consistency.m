@@ -1,6 +1,6 @@
-function Fig6_ExternalConsistency_FSP1_LIGHT_FINAL_TOPJOURNAL()
+function ExternalValidation_FSP1Consistency()
 % =========================================================================
-% Fig6_ExternalConsistency_FSP1_LIGHT_FINAL_TOPJOURNAL
+% ExternalValidation_FSP1Consistency
 %
 % Lightweight external consistency check for the multiscale
 % Fenton -> LPO/ferroptosis -> tumour-growth framework.

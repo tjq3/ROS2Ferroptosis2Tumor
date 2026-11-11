@@ -1,6 +1,6 @@
-function SI_M3_Macro_SSA_Numerical_Validation_FINAL()
+function CTMC_NumericalValidation()
 % =========================================================================
-% SI_M3_Macro_SSA_Numerical_Validation_FINAL
+% CTMC_NumericalValidation
 %
 % FINAL SI numerical validation of the event-driven hazard-based macro SSA.
 %
@@ -69,13 +69,13 @@ AUTO_START_POOL = true;
 scriptDir=fileparts(mfilename('fullpath'));
 if isempty(scriptDir), scriptDir=pwd; end
 
-coreFile=fullfile(scriptDir,'macro_sim_core_hazard_SSA_FINAL.m');
+coreFile=fullfile(scriptDir,'CTMC_EventDrivenSimulation.m');
 rFile=fullfile(scriptDir,'Macro_r_Calibration_OUT','Macro_r_LOCKED.mat');
 muFile=fullfile(scriptDir,'Macro_mu_Calibration_OUT','Macro_mu_LOCKED.mat');
 oldDtFile=fullfile(scriptDir,'Macro_Hazard_PreQ1_DT_Refinement_OUT', ...
     'Macro_Hazard_PreQ1_DT_Refinement_FINAL.mat');
 
-assert(isfile(coreFile),'Missing macro_sim_core_hazard_SSA_FINAL.m.');
+assert(isfile(coreFile),'Missing CTMC_EventDrivenSimulation.m.');
 assert(isfile(rFile),'Missing Macro_r_LOCKED.mat.');
 assert(isfile(muFile),'Missing Macro_mu_LOCKED.mat.');
 
@@ -363,11 +363,11 @@ function E=runSSAEnsemble(cfg,nRep,seedBase,poolReady,storeCurves)
 tmp=cell(nRep,1);
 if poolReady
     parfor k=1:nRep
-        c=cfg; c.seed=seedBase+k; O=macro_sim_core_hazard_SSA_FINAL(c); tmp{k}=reduceSSA(O,storeCurves);
+        c=cfg; c.seed=seedBase+k; O=CTMC_EventDrivenSimulation(c); tmp{k}=reduceSSA(O,storeCurves);
     end
 else
     for k=1:nRep
-        c=cfg; c.seed=seedBase+k; O=macro_sim_core_hazard_SSA_FINAL(c); tmp{k}=reduceSSA(O,storeCurves);
+        c=cfg; c.seed=seedBase+k; O=CTMC_EventDrivenSimulation(c); tmp{k}=reduceSSA(O,storeCurves);
     end
 end
 E=stackReduced(tmp,storeCurves);

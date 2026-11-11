@@ -1,6 +1,6 @@
-function Fig5B_Q1_Main_REVISED_WITH_TRANSLATION_FINAL()
+function CTMC_CommitmentClearanceFigure()
 % =========================================================================
-% Fig5B_Q1_Main_REVISED_WITH_TRANSLATION_FINAL
+% CTMC_CommitmentClearanceFigure
 %
 % Revised FINAL main-text Q1 plotting script.
 %

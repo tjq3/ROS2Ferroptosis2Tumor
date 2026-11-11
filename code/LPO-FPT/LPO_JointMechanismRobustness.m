@@ -1,11 +1,11 @@
-%% Fig4C_SI_FINAL_COLORFIX.m
+%% LPO_JointMechanismRobustness.m
 % =========================================================================
 % Fig. 4C SUPPLEMENTARY-INFORMATION FINAL
 %
 % This script generates ONLY the supporting analyses needed to validate the
 % Fig. 4C main-text mechanism without over-expanding the SI.
 %
-% Run Fig4C_MAIN_FINAL.m first.
+% Run LPO_JointMechanism.m first.
 %
 % SI FIGURES
 % ----------
@@ -34,7 +34,7 @@
 %
 % INPUTS
 % ------
-% 1) Fig4C_MAIN_FINAL_data.mat produced by Fig4C_MAIN_FINAL.m
+% 1) Fig4C_MAIN_FINAL_data.mat produced by LPO_JointMechanism.m
 % 2) original Fig4B_fateRoutes_data.mat source bank
 % =========================================================================
 
@@ -108,7 +108,7 @@ else
     mainFile=MAIN_DATA_FILE;
 end
 if isempty(mainFile) || ~isfile(mainFile)
-    error(['Cannot find %s. Run Fig4C_MAIN_FINAL.m first, then set ' ...
+    error(['Cannot find %s. Run LPO_JointMechanism.m first, then set ' ...
            'MAIN_DATA_FILE if needed.'],MAIN_DATA_NAME);
 end
 

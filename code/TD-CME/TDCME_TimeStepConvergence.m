@@ -1,5 +1,5 @@
 % =========================================================================
-% TDCME_FixedThreshold_dtConvergence_FINAL.m
+% TDCME_TimeStepConvergence.m
 %
 % Purpose
 % -------

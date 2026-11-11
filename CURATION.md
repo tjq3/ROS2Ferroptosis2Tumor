@@ -18,10 +18,10 @@ Additional theory-only or secondary display scripts were excluded to focus the r
 
 Paths in the source column are relative to the supplied archive's `finalfinal/` directory. A `macro/v2/` prefix identifies recovered production dependencies. The validation source is `validation/finalfinal/validation.m`.
 
-| Released file | Source | Content comparison |
+| Released file | Source | Comparison before the naming update |
 | --- | --- | --- |
-| [`TDCME_fixedC2_ablation_FINAL.m`](code/TD-CME/TDCME_fixedC2_ablation_FINAL.m) | `TDCME_fixedC2_ablation_FINAL.m` | Byte-identical |
-| [`TDCME_Fig2ABC.m`](code/TD-CME/TDCME_Fig2ABC.m) | `TDCME_matchtohighorderandSI2.m` | Byte-identical |
+| [`TDCME_IronRecyclingAblation.m`](code/TD-CME/TDCME_IronRecyclingAblation.m) | `TDCME_fixedC2_ablation_FINAL.m` | Byte-identical |
+| [`TDCME_ROSBurdenAndFPT.m`](code/TD-CME/TDCME_ROSBurdenAndFPT.m) | `TDCME_matchtohighorderandSI2.m` | Byte-identical |
 | [`TDCME_RegimeMap.m`](code/TD-CME/TDCME_RegimeMap.m) | `regimemap.m` | Path, workbook or worker-storage edits |
 | [`TDCME_CoreRobustness.m`](code/TD-CME/TDCME_CoreRobustness.m) | `robustness.m` | Byte-identical |
 | [`TDCME_TimeStepConvergence.m`](code/TD-CME/TDCME_TimeStepConvergence.m) | `robustness3.m` | Byte-identical |
@@ -34,52 +34,52 @@ Paths in the source column are relative to the supplied archive's `finalfinal/` 
 | [`SDRDME_GeometryRobustness.m`](code/SD-RDME/SDRDME_GeometryRobustness.m) | `SDRDME_geometry.m` | Byte-identical |
 | [`SDRDME_CoreRobustness.m`](code/SD-RDME/SDRDME_CoreRobustness.m) | `SDRDME_robustness.m` | Byte-identical |
 | [`LPO_ThresholdAndWeightRobustness.m`](code/LPO-FPT/LPO_ThresholdAndWeightRobustness.m) | `MLWTWS_SIfinal.m` | Path, workbook or worker-storage edits |
-| [`Fig4D_CellStateDependentFateRewiring_FINAL2.m`](code/LPO-FPT/Fig4D_CellStateDependentFateRewiring_FINAL2.m) | `cellstate.m` | Path, workbook or worker-storage edits |
+| [`LPO_RepairTimeAndFateRoutes.m`](code/LPO-FPT/LPO_RepairTimeAndFateRoutes.m) | `cellstate.m` | Path, workbook or worker-storage edits |
 | [`LPO_FateRoutes.m`](code/LPO-FPT/LPO_FateRoutes.m) | `fateroute.m` | Path, workbook or worker-storage edits |
 | [`LPO_JointMechanism.m`](code/LPO-FPT/LPO_JointMechanism.m) | `jointmechanism_final.m` | Path, workbook or worker-storage edits |
 | [`LPO_JointMechanismRobustness.m`](code/LPO-FPT/LPO_JointMechanismRobustness.m) | `jointmechanism_finalSI.m` | Path, workbook or worker-storage edits |
 | [`LPO_SpatialCoarseGraining.m`](code/LPO-FPT/LPO_SpatialCoarseGraining.m) | `spatialcoarseSI.m` | Path, workbook or worker-storage edits |
 | [`LPO_TemporalMemoryAndHorizon.m`](code/LPO-FPT/LPO_TemporalMemoryAndHorizon.m) | `temporalmemorySI.m` | Path, workbook or worker-storage edits |
-| [`Macro_Q1_TargetedRefinement_FINAL.m`](code/CTMC/Macro_Q1_TargetedRefinement_FINAL.m) | `Fig5B_Q1_mainphenotype_calu.m` | Byte-identical |
-| [`Fig5B_Q1_Main_REVISED_WITH_TRANSLATION_FINAL.m`](code/CTMC/Fig5B_Q1_Main_REVISED_WITH_TRANSLATION_FINAL.m) | `Fig5B_Q1_mainphenotype_plot.m` | Byte-identical |
-| [`Fig5C_Q2_REVISED_3D_MECHANISM_FINAL_v2.m`](code/CTMC/Fig5C_Q2_REVISED_3D_MECHANISM_FINAL_v2.m) | `Fig5C_Q2_REVISED_3D_MECHANISM_FINAL_v2.m` | Byte-identical |
-| [`SI_M1_MesoMacro_Interface_Robustness_FINAL.m`](code/CTMC/SI_M1_MesoMacro_Interface_Robustness_FINAL.m) | `SI_M1_MesoMacro_Interface_Robustness_FINAL.m` | Path, workbook or worker-storage edits |
-| [`SI_M2_Macro_Parameter_Benchmarks_FINAL.m`](code/CTMC/SI_M2_Macro_Parameter_Benchmarks_FINAL.m) | `SI_M2_Macro_Parameter_Benchmarks_FINAL.m` | Byte-identical |
-| [`SI_M3_Macro_SSA_Numerical_Validation_FINAL.m`](code/CTMC/SI_M3_Macro_SSA_Numerical_Validation_FINAL.m) | `SI_M3_Macro_SSA_Numerical_Validation_FINAL.m` | Byte-identical |
-| [`SI_M5_Q1_StatisticalValidation_FINAL.m`](code/CTMC/SI_M5_Q1_StatisticalValidation_FINAL.m) | `SI_M5_Q1_StatisticalValidation_FINAL.m` | Byte-identical |
-| [`SI_Q2_1_SpatialArrangement_Robustness_FINAL.m`](code/CTMC/SI_Q2_1_SpatialArrangement_Robustness_FINAL.m) | `SI_Q2_1_SpatialArrangement_Robustness_FINAL.m` | Byte-identical |
-| [`SI_Q2_2_NeighbourhoodAccess_Mechanism_FINAL.m`](code/CTMC/SI_Q2_2_NeighbourhoodAccess_Mechanism_FINAL.m) | `SI_Q2_2_NeighbourhoodAccess_Mechanism_FINAL.m` | Byte-identical |
-| [`SI_Q2_3_ConditionGenerality_FINAL.m`](code/CTMC/SI_Q2_3_ConditionGenerality_FINAL.m) | `SI_Q2_3_ConditionGenerality_FINAL.m` | Byte-identical |
-| [`Fig6_ExternalConsistency_FSP1_LIGHT_FINAL_TOPJOURNAL.m`](code/External-Validation/Fig6_ExternalConsistency_FSP1_LIGHT_FINAL_TOPJOURNAL.m) | `validation/finalfinal/validation.m` | Path, workbook or worker-storage edits |
-| [`Meso_to_Macro_Risk_Interface_FINAL_v2.m`](code/CTMC/Meso_to_Macro_Risk_Interface_FINAL_v2.m) | `macro/v2/Meso_to_Macro_Risk_Interface_FINAL_v2.m` | Path, workbook or worker-storage edits |
-| [`Macro_Q2_SpatialArrangement_FINAL.m`](code/CTMC/Macro_Q2_SpatialArrangement_FINAL.m) | `macro/v2/Macro_Q2_SpatialArrangement_FINAL.m` | Byte-identical |
-| [`Macro_Q2_NeighbourhoodAccess_Mechanism_FINAL.m`](code/CTMC/Macro_Q2_NeighbourhoodAccess_Mechanism_FINAL.m) | `macro/v2/Macro_Q2_NeighbourhoodAccess_Mechanism_FINAL.m` | Byte-identical |
-| [`Macro_Q2_TargetedConditionMap_FINAL.m`](code/CTMC/Macro_Q2_TargetedConditionMap_FINAL.m) | `macro/v2/Macro_Q2_TargetedConditionMap_FINAL.m` | Byte-identical |
-| [`macro_sim_core_hazard_SSA_FINAL.m`](code/CTMC/macro_sim_core_hazard_SSA_FINAL.m) | `macro/v2/macro_sim_core_hazard_SSA_FINAL.m` | Byte-identical |
+| [`CTMC_CommitmentClearanceScan.m`](code/CTMC/CTMC_CommitmentClearanceScan.m) | `Fig5B_Q1_mainphenotype_calu.m` | Byte-identical |
+| [`CTMC_CommitmentClearanceFigure.m`](code/CTMC/CTMC_CommitmentClearanceFigure.m) | `Fig5B_Q1_mainphenotype_plot.m` | Byte-identical |
+| [`CTMC_SpatialArrangementFigure.m`](code/CTMC/CTMC_SpatialArrangementFigure.m) | `Fig5C_Q2_REVISED_3D_MECHANISM_FINAL_v2.m` | Byte-identical |
+| [`CTMC_RiskInterfaceRobustness.m`](code/CTMC/CTMC_RiskInterfaceRobustness.m) | `SI_M1_MesoMacro_Interface_Robustness_FINAL.m` | Path, workbook or worker-storage edits |
+| [`CTMC_ParameterBenchmarks.m`](code/CTMC/CTMC_ParameterBenchmarks.m) | `SI_M2_Macro_Parameter_Benchmarks_FINAL.m` | Byte-identical |
+| [`CTMC_NumericalValidation.m`](code/CTMC/CTMC_NumericalValidation.m) | `SI_M3_Macro_SSA_Numerical_Validation_FINAL.m` | Byte-identical |
+| [`CTMC_CommitmentClearanceValidation.m`](code/CTMC/CTMC_CommitmentClearanceValidation.m) | `SI_M5_Q1_StatisticalValidation_FINAL.m` | Byte-identical |
+| [`CTMC_SpatialArrangementRobustness.m`](code/CTMC/CTMC_SpatialArrangementRobustness.m) | `SI_Q2_1_SpatialArrangement_Robustness_FINAL.m` | Byte-identical |
+| [`CTMC_NeighbourhoodAccessFigure.m`](code/CTMC/CTMC_NeighbourhoodAccessFigure.m) | `SI_Q2_2_NeighbourhoodAccess_Mechanism_FINAL.m` | Byte-identical |
+| [`CTMC_SpatialArrangementGenerality.m`](code/CTMC/CTMC_SpatialArrangementGenerality.m) | `SI_Q2_3_ConditionGenerality_FINAL.m` | Byte-identical |
+| [`ExternalValidation_FSP1Consistency.m`](code/External-Validation/ExternalValidation_FSP1Consistency.m) | `validation/finalfinal/validation.m` | Path, workbook or worker-storage edits |
+| [`CTMC_MesoscopicRiskInterface.m`](code/CTMC/CTMC_MesoscopicRiskInterface.m) | `macro/v2/Meso_to_Macro_Risk_Interface_FINAL_v2.m` | Path, workbook or worker-storage edits |
+| [`CTMC_SpatialArrangementSimulation.m`](code/CTMC/CTMC_SpatialArrangementSimulation.m) | `macro/v2/Macro_Q2_SpatialArrangement_FINAL.m` | Byte-identical |
+| [`CTMC_NeighbourhoodAccessMechanism.m`](code/CTMC/CTMC_NeighbourhoodAccessMechanism.m) | `macro/v2/Macro_Q2_NeighbourhoodAccess_Mechanism_FINAL.m` | Byte-identical |
+| [`CTMC_SpatialArrangementConditionScan.m`](code/CTMC/CTMC_SpatialArrangementConditionScan.m) | `macro/v2/Macro_Q2_TargetedConditionMap_FINAL.m` | Byte-identical |
+| [`CTMC_EventDrivenSimulation.m`](code/CTMC/CTMC_EventDrivenSimulation.m) | `macro/v2/macro_sim_core_hazard_SSA_FINAL.m` | Byte-identical |
 
 The selected v2 meso–macro interface is the author's orientation-compatible implementation. It handles the condition-by-repair-time layout saved by the finalized cell-state analysis.
 
 ## Edits
 
-All released MATLAB files use UTF-8 and LF line endings. Twenty-two filenames differ from their source names. Function-file names match the functions they expose. Script names provide descriptive model and analysis roles. Original scientific comments and historical figure labels are retained apart from the workbook-input comments changed below.
+Public MATLAB filenames identify the model and analysis. Function declarations, calls, help comments, run instructions, and documentation use the corresponding entry-point names. The original MAT filenames and directory names allow the same archived results to be loaded.
 
-- `regimemap.m` — Use the operating-system temporary directory for default MATLAB worker storage.
-- `MLWTWS_SIfinal.m` — Resolve the fate-route MAT file relative to this model directory.
-- `cellstate.m` — Resolve the fate-route MAT file relative to this model directory.
-- `fateroute.m` — Add peer TD-CME and SD-RDME directories to the existing input search.
-- `jointmechanism_final.m` — Add the final fate-route output directory to the existing input search.
-- `jointmechanism_finalSI.m` — Add the final fate-route output directory to the existing input search.
-- `spatialcoarseSI.m` — Add the final fate-route and peer SD-RDME directories to the existing input search.
-- `temporalmemorySI.m` — Add the final fate-route output directory to the existing input search.
-- `SI_M1_MesoMacro_Interface_Robustness_FINAL.m` — Read the two inputs directly from the peer LPO-FPT output directories.
-- `Meso_to_Macro_Risk_Interface_FINAL_v2.m` — Read the two inputs directly from the peer LPO-FPT output directories.
-- `validation.m` — Add the peer CTMC Q1 output and original publisher workbook names and sheet names.
+- `TDCME_RegimeMap.m` — Use the operating-system temporary directory for default MATLAB worker storage.
+- `LPO_ThresholdAndWeightRobustness.m` — Resolve the fate-route MAT file relative to this model directory.
+- `LPO_RepairTimeAndFateRoutes.m` — Resolve the fate-route MAT file relative to this model directory.
+- `LPO_FateRoutes.m` — Add peer TD-CME and SD-RDME directories to the existing input search.
+- `LPO_JointMechanism.m` — Add the final fate-route output directory to the existing input search.
+- `LPO_JointMechanismRobustness.m` — Add the final fate-route output directory to the existing input search.
+- `LPO_SpatialCoarseGraining.m` — Add the final fate-route and peer SD-RDME directories to the existing input search.
+- `LPO_TemporalMemoryAndHorizon.m` — Add the final fate-route output directory to the existing input search.
+- `CTMC_RiskInterfaceRobustness.m` — Read the two inputs directly from the peer LPO-FPT output directories.
+- `CTMC_MesoscopicRiskInterface.m` — Read the two inputs directly from the peer LPO-FPT output directories.
+- `ExternalValidation_FSP1Consistency.m` — Add the peer CTMC Q1 output and original publisher workbook names and sheet names.
 
 Every released file was compared with its decoded source and the explicit path/input changes above. Parameters, reaction propensities, random seeds, numerical solvers, thresholds, bootstrap calculations and statistical decision rules retain their source implementations.
 
 ## Direct comparison with the supplied sources
 
-A fresh comparison against the four source ZIP archives and the corresponding local production dependencies found 25 of the 36 MATLAB files to be byte-identical. The remaining 11 files differ only in the path, workbook-selection and worker-storage changes documented above. Every retained SD-RDME file and the CTMC SSA core are byte-identical to their respective sources.
+Before the naming update, 25 of the 36 MATLAB files matched their source files byte for byte. The other 11 differed in the path, workbook-selection, and worker-storage changes documented above. The naming update changes script filenames and references, including MATLAB function declarations, calls, and file checks.
 
 The four frozen MAT files were compared as binary files against their originals in `macro/v2/`. All four matched byte for byte.
 

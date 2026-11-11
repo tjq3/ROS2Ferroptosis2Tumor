@@ -1,4 +1,4 @@
-function SI_Q2_1_SpatialArrangement_Robustness_FINAL()
+function CTMC_SpatialArrangementRobustness()
 % Curated Q2 SI-1. NO NEW SIMULATION.
 % a Moran manipulation; b AUTC; c roughness; d matched-burden cavity.
 

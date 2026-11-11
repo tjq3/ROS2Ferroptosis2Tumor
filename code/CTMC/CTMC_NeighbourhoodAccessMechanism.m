@@ -1,6 +1,6 @@
-function Macro_Q2_NeighbourhoodAccess_Mechanism_FINAL()
+function CTMC_NeighbourhoodAccessMechanism()
 % =========================================================================
-% Macro_Q2_NeighbourhoodAccess_Mechanism_FINAL
+% CTMC_NeighbourhoodAccessMechanism
 % FIX 2026-08-23: corrected nRep x nArr orientation after trapz/squeeze.
 %
 % NEXT STEP AFTER Macro_Q2_SpatialArrangement_PILOT:
@@ -75,7 +75,7 @@ function Macro_Q2_NeighbourhoodAccess_Mechanism_FINAL()
 %
 % REQUIRED
 % --------
-% macro_sim_core_hazard_SSA_FINAL.m
+% CTMC_EventDrivenSimulation.m
 % Macro_Q2_SpatialArrangement_PILOT_OUT/
 %     Macro_Q2_SpatialArrangement_PILOT.mat
 %
@@ -96,14 +96,14 @@ close all;
 % 0. FINAL SETTINGS
 % =========================================================================
 % The FINAL mechanism confirmation uses the same frozen Q2 anchor definition
-% and the same FINAL seed families as Macro_Q2_SpatialArrangement_FINAL.
+% and the same FINAL seed families as CTMC_SpatialArrangementSimulation.
 % Event logging is passive; therefore the rerun must reproduce the FINAL
 % spatial-arrangement AUTC and Moran's I exactly before mechanistic quantities
 % are accepted.
 TARGET_NV = 150;
 N_BOOT = 10000;
 
-% MUST match Macro_Q2_SpatialArrangement_FINAL.m
+% MUST match CTMC_SpatialArrangementSimulation.m
 SEED_PATTERN_BASE = 1910000;
 SEED_SIM_BASE     = 1920000;
 
@@ -122,14 +122,14 @@ nArr = numel(arrNames);
 scriptDir = fileparts(mfilename('fullpath'));
 if isempty(scriptDir), scriptDir = pwd; end
 
-coreFile = fullfile(scriptDir,'macro_sim_core_hazard_SSA_FINAL.m');
+coreFile = fullfile(scriptDir,'CTMC_EventDrivenSimulation.m');
 
 finalCandidates = { ...
     fullfile(scriptDir,'Macro_Q2_SpatialArrangement_FINAL_OUT', ...
         'Macro_Q2_SpatialArrangement_FINAL.mat'), ...
     fullfile(scriptDir,'Macro_Q2_SpatialArrangement_FINAL.mat')};
 
-assert(isfile(coreFile),'Missing macro_sim_core_hazard_SSA_FINAL.m.');
+assert(isfile(coreFile),'Missing CTMC_EventDrivenSimulation.m.');
 
 finalFile = '';
 for k=1:numel(finalCandidates)
@@ -140,7 +140,7 @@ for k=1:numel(finalCandidates)
 end
 assert(~isempty(finalFile), ...
     ['Cannot find Macro_Q2_SpatialArrangement_FINAL.mat. Run ', ...
-     'Macro_Q2_SpatialArrangement_FINAL.m first.']);
+     'CTMC_SpatialArrangementSimulation.m first.']);
 
 S = load(finalFile,'Q2');
 assert(isfield(S,'Q2'),'FINAL spatial MAT must contain Q2.');
@@ -693,7 +693,7 @@ for a=1:3
     cfg.store_event_log = true;
     cfg.verbose = false;
 
-    O = macro_sim_core_hazard_SSA_FINAL(cfg);
+    O = CTMC_EventDrivenSimulation(cfg);
 
     D = replayEventLogMechanism( ...
         O,mapsChi{a},P.initialMask,chiLow,chiHigh,targetNV);

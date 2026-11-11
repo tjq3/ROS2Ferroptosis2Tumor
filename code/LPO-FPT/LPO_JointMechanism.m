@@ -1,4 +1,4 @@
-%% Fig4C_MAIN_FINAL.m
+%% LPO_JointMechanism.m
 % =========================================================================
 % Fig. 4C MAIN-TEXT FINAL
 % Persistent mitochondrial priming closes the residual temporal fate margin

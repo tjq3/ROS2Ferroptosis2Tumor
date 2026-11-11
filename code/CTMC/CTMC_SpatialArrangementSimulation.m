@@ -1,6 +1,6 @@
-function Macro_Q2_SpatialArrangement_FINAL()
+function CTMC_SpatialArrangementSimulation()
 % =========================================================================
-% Macro_Q2_SpatialArrangement_FINAL
+% CTMC_SpatialArrangementSimulation
 %
 % Q2 primary causal test:
 % Does the SPATIAL ARRANGEMENT of cell-level ferroptotic susceptibility
@@ -15,7 +15,7 @@ function Macro_Q2_SpatialArrangement_FINAL()
 % F --(mu)-------------> empty
 %
 % Solver:
-%   macro_sim_core_hazard_SSA_FINAL.m
+%   CTMC_EventDrivenSimulation.m
 %   exact event-driven direct-method SSA.
 %
 % Q2 PRIMARY HETEROGENEITY MODEL
@@ -96,7 +96,7 @@ nArr = numel(arrNames);
 scriptDir = fileparts(mfilename('fullpath'));
 if isempty(scriptDir), scriptDir = pwd; end
 
-coreFile = fullfile(scriptDir,'macro_sim_core_hazard_SSA_FINAL.m');
+coreFile = fullfile(scriptDir,'CTMC_EventDrivenSimulation.m');
 rFile = fullfile(scriptDir,'Macro_r_Calibration_OUT','Macro_r_LOCKED.mat');
 muFile = fullfile(scriptDir,'Macro_mu_Calibration_OUT','Macro_mu_LOCKED.mat');
 ssaLockFile = fullfile(scriptDir,'Macro_Hazard_SSA_Domain_Confirm_OUT','Macro_SSA_LOCKED.mat');
@@ -106,7 +106,7 @@ q1Candidates = { ...
         'Macro_Q1_TargetedRefinement_FINAL.mat'), ...
     fullfile(scriptDir,'Macro_Q1_TargetedRefinement_FINAL.mat')};
 
-assert(isfile(coreFile),'Missing macro_sim_core_hazard_SSA_FINAL.m.');
+assert(isfile(coreFile),'Missing CTMC_EventDrivenSimulation.m.');
 assert(isfile(rFile),'Missing Macro_r_LOCKED.mat.');
 assert(isfile(muFile),'Missing Macro_mu_LOCKED.mat.');
 assert(isfile(ssaLockFile),'Missing Macro_SSA_LOCKED.mat.');
@@ -545,7 +545,7 @@ for a=1:4
     cfg.snapshot_times_h=snapTimes; cfg.return_final_state=true;
     cfg.compute_cavity=true; cfg.store_event_log=false; cfg.verbose=false;
 
-    O=macro_sim_core_hazard_SSA_FINAL(cfg);
+    O=CTMC_EventDrivenSimulation(cfg);
     R.out(a)=reduceQ2Output(O,chiLow,chiHigh); %#ok<AGROW>
 end
 end

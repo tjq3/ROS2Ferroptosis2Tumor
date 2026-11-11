@@ -1,6 +1,6 @@
-function Meso_to_Macro_Risk_Interface_FINAL_v2()
+function CTMC_MesoscopicRiskInterface()
 % =========================================================================
-% Meso_to_Macro_Risk_Interface_FINAL_v2
+% CTMC_MesoscopicRiskInterface
 %
 % FINAL mesoscopic -> macroscopic ferroptotic-risk interface
 %

@@ -1,5 +1,5 @@
 % =========================================================================
-% TDCME_Fig2ABC_FullHorizonPanelC_FINAL.m
+% TDCME_ROSBurdenAndFPT.m
 %
 % Purpose
 % -------

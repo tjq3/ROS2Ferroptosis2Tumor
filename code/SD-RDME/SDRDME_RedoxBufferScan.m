@@ -1,4 +1,4 @@
-%% Fig3H_redoxBufferCondition_FINAL.m
+%% SDRDME_RedoxBufferScan.m
 % -------------------------------------------------------------------------
 % Fe3+->Fe2+ recycling-capacity x diffusion-heterogeneity condition map.
 %

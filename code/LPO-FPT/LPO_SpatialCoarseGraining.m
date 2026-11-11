@@ -1,4 +1,4 @@
-%% Fig4_PreC_SpatialCoarseGraining_Audit.m
+%% LPO_SpatialCoarseGraining.m
 % =========================================================================
 % Pre-Fig.4C diagnostic:
 % Does the weak Full-vs-Uniform effect at the mesoscopic level arise from
